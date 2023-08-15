@@ -35,6 +35,22 @@ function showCollection(albumArray) {
 showCollection(collection);
 
 
+function findByArtist (artist){
+    const results = [];
+    for (const album of collection) {
+        if (album.artist === artist) {
+          results.push(album);
+        }
+      }
+      return results;
+    }
+
+
+console.log('Albums by Stevie Nicks', findByArtist('Stevie Nicks'));
+
+console.log('Albums by Caamp', findByArtist('Caamp'));
+
+console.log('Albums by Fleetwood Mac', findByArtist('Fleetwood Mac'));
 
 
 
