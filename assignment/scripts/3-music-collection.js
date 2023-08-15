@@ -57,9 +57,12 @@ console.log('Albums by Fleetwood Mac', findByArtist('Fleetwood Mac'));
 
 
 
+/* 
 
+const fullName = (`${me.firstName} ${me.lastName}`);
 
+CAN CREATE NEW VARIABLES TO USE FOR OBJECT LOOPS AND FUNCTIONS
 
-
-
+COME BACK TO THIS!!! 
+*/
 
