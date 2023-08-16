@@ -86,6 +86,29 @@ console.log('Albums in collection by Milky Chance', findByArtist ('Milky Chance'
 
 
 
+// Stretch goals --- only have first bullet point done so far
+// Can't figure out the other aspects of this question
+/*
+function search(artist, yearPublished){
+  results = [];
+  for (i = 0; i < collection.length; i++){
+    const album = collection[i];
+    if (album.artist === artist && album.yearPublished === yearPublished){
+      results.push(album);
+      console.log(`Album: ${album.artist}, year: ${yearPublished}`);
+    } 
+  }
+  return results;
+}
+
+search('Stevie Nicks', 1981);
+search('Stevie Nicks', 2012);
+search();
+*/
+
+
+
+
 
 
 
