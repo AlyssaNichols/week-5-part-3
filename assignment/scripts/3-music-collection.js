@@ -14,18 +14,38 @@ collection.push(newAlbum);
 return newAlbum;
 }
 
-addToCollection('Sadnecessary', 'Milky Chance', 2013);
+let album0 = addToCollection('Sadnecessary', 'Milky Chance', 2013);
+console.log('added first album:', album0)
 
-//added 1 album to the collection and checking it if worked
-console.log(collection);
+// This does the exact same thing as above, which way is preferred?
+/* 
+addToCollection('Sadnecessary', 'Milky Chance', 2013);
+*/
+
+
 
 // Adding albums to collection using the addToCollection function and inputting the proper parameters to replace the placeholders.
 
+let album1 = addToCollection('This Empty Northern Hemisphere', 'Gregory Alan Isakov', 2009);
+let album2 = addToCollection('The Weatherman', 'Gregory Alan Isakov', 2013);
+let album3 = addToCollection('Bella Donna', 'Stevie Nicks', 1981);
+let album4 = addToCollection('The Wild Heart', 'Stevie Nicks', 1983);
+let album5 = addToCollection('Sound & Color', 'Alabama Shakes', 2015);
+
+console.log('Adding another album to the collection', album1)
+console.log('Adding another album to the collection', album2)
+console.log('Adding another album to the collection', album3)
+console.log('Adding another album to the collection', album4)
+console.log('Adding another album to the collection', album5)
+
+//another way to add all the albums, does the same thing as above
+/*
 console.log('Adding another album to the collection', addToCollection('This Empty Northern Hemisphere', 'Gregory Alan Isakov', 2009));
 console.log('Adding another album to the collection', addToCollection('The Weatherman', 'Gregory Alan Isakov', 2013));
 console.log('Adding another album to the collection', addToCollection('Bella Donna', 'Stevie Nicks', 1981));
 console.log('Adding another album to the collection', addToCollection('The Wild Heart', 'Stevie Nicks', 1983));
 console.log('Adding another album to the collection', addToCollection('Sound & Color', 'Alabama Shakes', 2015));
+*/
 
 console.log('My collection so far is:', collection.length, collection);
 
