@@ -4,15 +4,15 @@ let collection = [];
 
 
 function addToCollection (title, artist, yearPublished){
-    const newRecord = {
+    const newAlbum = {
         title: title,
         artist: artist,
         yearPublished: yearPublished,
     };
 
-collection.push(newRecord);
+collection.push(newAlbum);
 
-return newRecord;
+return newAlbum;
 }
 
 // Adding albums to collection using the addToCollection function and inputting the proper parameters to replace the placeholders.
@@ -50,59 +50,61 @@ function showCollection(array) {
 */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* function showCollection(albumArray) {
-  console.log(`Number of items in the collection: ${albumArray.length}`);
-  for (const album of albumArray) {
-    console.log(`${album.title} by ${album.artist}, published in ${album.yearPublished}`);
+function findByArtist(artist){
+  results = [];
+  for (i = 0; i < collection.length; i++){
+    const album = collection[i];
+    if (album.artist === artist){
+      results.push(album);
+    }
   }
+  return results
+
 }
 
-showCollection(collection);
+// Same function but written with for of loop instead
 
-
-function findByArtist (artist){
-    const results = [];
-    for (const album of collection) {
-        if (album.artist === artist) {
-          results.push(album);
-        }
+/* function findByArtist (artist){
+  const results = [];
+  for (const album of collection) {
+      if (album.artist === artist) {
+        results.push(album);
       }
-      return results;
     }
+    return results;
+  }
+  */
+ 
+
+// searching 2 artists that I have in the collection and 1 that isn't to make sure the function is working properly.
+console.log('Albums by Stevie Nicks', findByArtist ('Stevie Nicks'));
+console.log('Albums by Caamp', findByArtist ('Caamp'));
+console.log('Albums by Milky Chance', findByArtist ('Milky Chance'));
 
 
-console.log('Albums by Stevie Nicks', findByArtist('Stevie Nicks'));
-
-console.log('Albums by Caamp', findByArtist('Caamp'));
-
-console.log('Albums by Milky Chance', findByArtist('Milky Chance'));
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
 
 const fullName = (`${me.firstName} ${me.lastName}`);
 
