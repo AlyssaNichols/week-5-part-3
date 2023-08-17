@@ -51,6 +51,7 @@ console.log('My collection so far is:', collection.length, collection);
 
 
 //function to show the collection- don't need to console.log the function because console logging is within the function.
+// just need to call the function to show what is in the collection
 
 function showCollection (array) {
   console.log('Number of items in the collection:', array.length);
@@ -106,46 +107,7 @@ console.log('Albums in collection by Milky Chance', findByArtist ('Milky Chance'
 
 
 
-// Stretch goals --- only have first bullet point done so far
-/* Can't figure out the other aspects of this question
 
-function search(artist, yearPublished){
-  results = [];
-  for (let key in collection){
-    
-  }
-  return results;
-}
+// Stretch goals --- these were really difficult for me and I couldn't seem to wrap my mind around them.
 
-search('Stevie Nicks', 1981);
-search('Stevie Nicks', 2012);
-search();
-
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-
-const fullName = (`${me.firstName} ${me.lastName}`);
-
-*/
 
